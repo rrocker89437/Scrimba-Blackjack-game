@@ -5,10 +5,16 @@ let secondCard = 10;
 // 2. Create a variable, sum, and set it to the sum of the two cards
 let sum = firstCard + secondCard;
 
+let hasBlackJack = false;
+
 if (sum < 21) {
   console.log("Do you want to draw another card? 🙂");
 } else if (sum === 21) {
   console.log("Blackjack! 🥳");
+  hasBlackJack = true;
 } else {
   console.log("Bust! 😭");
 }
+
+//CASH OUT!
+console.log(hasBlackJack);
