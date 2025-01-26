@@ -1,5 +1,6 @@
 let firstCard = 10;
 let secondCard = 4;
+//Create a new array - cards - that contains firstCard and secondCard
 let cards = [firstCard, secondCard]; // array --- 0 then 1
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -25,6 +26,8 @@ function renderGame() {
   //Render the cards on the page using this format -> "Cards: 10 4"
   //cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
   //render out ALL the cards we have
+
+  //Refer to the cards array when rendering out the cards
   cardsEl.textContent = "Cards: " + cards[0] + ", " + cards[1];
 
   //Render the sum on the page using this format -> "Sum: 14"
@@ -48,8 +51,12 @@ function newCard() {
   messageEl.textContent = "Drawing a new card from the deck!";
   //Create a card variable, and hard code its value to a number (2-11)
   let card = 7;
+
   //Add the new card to the sum variable
   sum += card;
+
+  // Push the card to the cards array
+  cards.push(card);
   //Call startGame()
   renderGame();
 }

@@ -448,3 +448,87 @@ console.log(messages)
 // How can you remove the last item in an array? Try to google it!
 messages.pop(newMessage)
 console.log(messages)
+
+// ------------------------------------------------------------
+//Counting in Javascript
+
+// Count to ten!
+
+// We need to specify...
+
+// Where should we START counting?
+// Where is the FINISH line?
+// What's the STEP SIZE we should use?
+
+//start at 1
+//finish before 11 (10)
+// step size = increase by 1 each time
+
+// START FINISH STEP SIZE
+for ( let count = 1; count < 11; count += 1 ) {
+
+    console.log(count)
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    //10
+
+}
+
+for ( let count = 1; count < 11; count += 2 ) {
+
+    console.log(count)
+    //1
+    //3
+    //5
+    //7
+    //9
+
+}
+
+// How would we go from 10 to 20?
+for ( let count = 10; count < 21; count += 1 ) {
+
+    console.log(count)
+
+}
+
+// Create a for loop that counts from 10 to 100 in steps of 10
+// Use console.log to log out the numbers
+for (let count = 10; count < 101; count += 10) {
+console.log(count)
+}
+
+// ------------------------------------------------------------
+let messages = [
+"Hey, how's it going?",
+"I'm great, thank you! How about you?",
+"All good. Been working on my portfolio lately.",
+"Same here!",
+"Great to hear",
+"🙌"
+]
+// DRY - Don't repeat yourself
+// console.log(messages[0])
+// console.log(messages[1])
+// console.log(messages[2])
+// console.log(messages[3])
+
+for (let i = 0; i < messages.length; i+= 1){
+console.log(mesages[i])
+}
+
+// ------------------------------------------------------------
+let cards = [7, 3, 9]
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+for (let i = 0; i < cards.length; i++){ //i++ is same as i+=1
+console.log(cards[i])
+}
