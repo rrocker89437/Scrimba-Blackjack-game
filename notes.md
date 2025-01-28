@@ -464,7 +464,7 @@ console.log(messages)
 //finish before 11 (10)
 // step size = increase by 1 each time
 
-// START FINISH STEP SIZE
+// START............. FINISH..... STEP SIZE
 for ( let count = 1; count < 11; count += 1 ) {
 
     console.log(count)
@@ -532,3 +532,15 @@ let cards = [7, 3, 9]
 for (let i = 0; i < cards.length; i++){ //i++ is same as i+=1
 console.log(cards[i])
 }
+
+// ------------------------------------------------------------
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
+let greetingEl = document.getElementById("greeting-el")
+
+// Render the sentence in the greetingEl
+// paragraph using a for loop and .textContent
+for (let i = 0; i < sentence.length; i+= 1) {
+greetingEl.textContent += sentence[i] + ""
+}
+// How do you keep the spaces between the words
+// if I remve them from the array? + ""
