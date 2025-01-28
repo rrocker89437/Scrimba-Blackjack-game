@@ -631,6 +631,8 @@ console.log( rollDice() )
 
 // ------------------------------------------------------------
 //Logical Operators
+// && and operator
+// || or operator
 
 let hasCompletedCourse = true
 let givesCertificate = true
@@ -662,4 +664,61 @@ function showSolution() {
 console.log("Showing the solution....")
 }
 
+// || or operator
+if (hasCompletedCourse === true || givesCertificate === true) {
+generateCertificate()
+}
+
+// Create two boolean variables,
+// likesDocumentaries and likesStartups
+let likesDocumentaries = true;
+let likesStartups = false
+// Use an OR statement (||) to call recommendMovie()
+// if either of those variables are true
+if (likesDocumentaries === true || likesStartups === true) {
+recommendMovie()
+}
+
+function recommendMovie(){
+console.log("Here are movies we recommend")
+}
+
 // ------------------------------------------------------------
+//Objects - store data in-depth - composite / complex data type
+// key-value pairs
+
+let player = {
+name: "Per",
+chips: 145
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
+
+// ------------------------------------------------------------
+let course = {
+title: "Learn CSS Grid for free",
+lessons: 16,
+creator: "Per Harald Borgen",
+length: 63,
+level: 2,
+isFree: true,
+tags: ["html", "css"]
+}
+
+console.log( course.tags )
+
+// ------------------------------------------------------------
+
+// Create an object that represents an airbnb castle listing.
+// It should contain at least one boolean, one string, one number, and one array
+let castle = {
+title: "Live like a king in my castle",
+price: 190,
+isSuperHost: true,
+images: ["img/castle1.png", "img/caste2.png"]
+}
+
+// Log out at least two of the keys using the dot notation
+console.log(castle.price)
+console.log(castle.isSuperHost)
