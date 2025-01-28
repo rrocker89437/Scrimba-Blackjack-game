@@ -1,6 +1,6 @@
 //Create the player object. Give it two keys, name and chips, and set their values
 let player = {
-  name: "Per",
+  name: "Miah",
   chips: 145,
   sayHello: function () {
     console.log("Hello!");
