@@ -1,25 +1,25 @@
-//-- VARIABLES STORE DATA
-//let count = 0;
+//JAVASCRIPT Notes
+
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//VARIABLES
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
 
 //-- 1. Create a variable, myAge, and set its value to your age
 let myAge = 27;
 //-- 2. Log the myAge variable to the console
 console.log(myAge);
-// ------------------------------------------------------------
 
-//-- let firstBatch = 5;
-//-- let secondBatch = 7;
-//-- let count = firstBatch + secondBatch;
-//-- console.log(count);
-
-// --1. Create two variables, myAge and humanDogRatio
-//let myAge = 27;
-//let humanDogRatio = 7;
-//-- 2. Multiply the two together and store the result in myDogAge
-//let myDogAge = myAge \* humanDogRatio;
-// --3. Log myDogAge to the console
-//console.log(myDogAge);
-// ------------------------------------------------------------
+//----------------
 
 //let count = 5
 //-- count + 1
@@ -33,11 +33,22 @@ bonusPoints = bonusPoints + 50;
 bonusPoints = bonusPoints - 75;
 bonusPoints = bonusPoints + 45;
 console.log(bonusPoints);
-// ------------------------------------------------------------
 
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 //FUNCTIONS
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
 
-//-- Declared Function
+//Declared Function
 function countdown() {
 console.log(5)
 console.log(4)
@@ -46,23 +57,25 @@ console.log(2)
 console.log(1)
 };
 
-//-- Invoked Function
+//Invoked Function
 countdown();
-// ------------------------------------------------------------
 
-//-- Create a function (you decide the name) that logs out the number 42 to the console
+//---------------
+
+//Create a function (you decide the name) that logs out the number 42 to the console
 function number() {
 console.log(42)
 }
-//-- Call/invoke the function
+//Call/invoke the function
 number();
-// ------------------------------------------------------------
+
+//---------------
 
 let lap1 = 34;
 let lap2 = 33;
 let lap3 = 36;
 
-//-- Create a function that logs out the sum of all the lap times
+//Create a function that logs out the sum of all the lap times
 function lapSum() {
 let total = lap1 + lap2 + lap3;
 console.log(total);
@@ -70,11 +83,12 @@ console.log(total);
 console.log(lap1 + lap2 + lap3);
 };
 lapSum();
-// ------------------------------------------------------------
+
+//---------------
 
 // let lapsCompleted = 0
 
-//-- Create a function that increments the lapsCompleted variable with one
+//Create a function that increments the lapsCompleted variable with one
 function totalLaps() {
 lapsCompleted = lapsCompleted + 1;
 };
@@ -83,29 +97,51 @@ totalLaps()
 totalLaps()
 totalLaps()
 console.log(lapsCompleted)
-// ------------------------------------------------------------
-// THE DOM
+
+//---------------
+
+//THE DOM
+//--------------------------------------------------------------------------------------
+
 // Document Object Model
 
 // 1. Document
 // The Html Document
+
 // 2. Object
 // The document keyword in javascript is of the datatype OBJECT.
 // Taking the html document and shoving it into a javascript object.
+
 // 3. Model
 // A representation or a modelation. Like the real saturn 5 rocket
 // that nasa built, and then there is the lego model.
+
 // Similarly there is the real html youve written in your .html file,
 // then there is the javascript model
+
 // REAL -- <h2 id="count-el">0</h2>
 // MODEL -- let countEl = document.getElementById("count-el");
 // The DOM is how you use javascript to modify a website
-// ------------------------------------------------------------
 
-// Strings
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//STRINGS
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
+
 let username = "Per";
 // "per" is a string which is inside a variable
 console.log(username);
+
+//---------------
 
 //-- Create a variable, message,
 //-- that stores the string: "You have tree new notifications"
@@ -113,9 +149,13 @@ let message = "You have three new notifications";
 console.log(message + ", " + username + "!");
 // The text above is called a concactination
 
+//---------------
+
 //-- Create a variable, messageToUser, that contains the message we have logged
 let messageToUser = message + ", " + username + "!";
 console.log(messageToUser);
+
+//---------------
 
 // Create two variables, name and greeting.
 // The name variable should store your name,
@@ -145,7 +185,20 @@ console.log(4 + 5) // 9
 console.log("2" + "4") // "24"
 console.log("5" + 1) // "51"
 console.log(100 + "100") // "100100"
-// ------------------------------------------------------------
+
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//GRABBING ELEMENTS BY ID
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
 
 // Grab the welcome-el paragraph and store it in a variable called welcomeEl
 let welcomeEl = document.getElementById("welcome-el");
@@ -162,7 +215,8 @@ welcomeEl.innerText = newGreeting + myName;
 welcomeEl.innerText = welcomeEl.innerText + "😍";
 // OR
 welcomeEl.innerText += "😍";
-// ------------------------------------------------------------
+
+//---------------
 
 // let countEl = document.getElementById("count-el")
 // let newCount = 0
@@ -176,6 +230,8 @@ welcomeEl.innerText += "😍";
 // function save() {
 // console.log(newCount)
 // }
+
+//---------------
 
 // 1. Grab the save-el paragrah and store it in a variable called saveEl
 let saveEl = document.getElementById("save-el");
@@ -195,9 +251,434 @@ saveEl.innerText += countStr ;
 // NB: Make sure to not delete the existing content of the paragraph
 console.log(count)
 }
-// ------------------------------------------------------------
+
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//ARRAYS - Ordered list of Items
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
+
+let featuredPosts = [
+"Check out my Netflix clone",
+"Here's the code for my project",
+"I've just relaunched my portfolio"
+]
+
+console.log( featuredPosts.length ) // 3
+//length is no zero index. it starts at 1
+
+// Create an array that lists your i.e. experience, education, licenses, skills or similar
+// The items of the array should be strings
+let experience = [
+"CEO at Scrimba", //0
+"Frontend developer at Xeneta", //1
+"People counter for Norstat" //2
+]
+
+console.log(experience[1])
+console.log(experience[2])
+console.log(experience[0])
+// Make the following appear in the console:
+// Frontend developer at Xeneta
+// People counter for Norstat
+// CEO at Scrimba
+
+//---------------
+
+// Array - ordered list of items - coposite / complex data type
+
+// Create an array that describes yourself.
+// Use the three primitive data types you've learned
+let aboutMe = [
+"My name is Miah",
+27,
+true
+]
+
+// It should contain your name (string), your age (number),
+// and whether you like pizza (boolean)
+
+//---------------
+
+//Array.push() and .pop()
+let cards = [7, 4]
+cards.push(6) //adds 6 to array
+
+// Push the newMessage to the messages array, and then log out the array
+let messages = [
+"Hey, how's it going?",
+"I'm great, thank you! How about you?",
+"All good. Been working on my portfolio lately."
+]
+
+let newMessage = "Same here!"
+messages.push(newMessage)
+console.log(messages)
+
+// How can you remove the last item in an array? Try to google it!
+messages.pop(newMessage)
+console.log(messages)
+
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//COUNTING in Javascript
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
+
+// Count to ten!
+
+// We need to specify...
+
+// Where should we START counting?
+// Where is the FINISH line?
+// What's the STEP SIZE we should use?
+
+//start at 1
+//finish before 11 (10)
+// step size = increase by 1 each time
+
+// START............. FINISH..... STEP SIZE
+for ( let count = 1; count < 11; count += 1 ) {
+
+    console.log(count)
+    //1
+    //2
+    //3
+    //4
+    //5
+    //6
+    //7
+    //8
+    //9
+    //10
+
+}
+
+for ( let count = 1; count < 11; count += 2 ) {
+
+    console.log(count)
+    //1
+    //3
+    //5
+    //7
+    //9
+
+}
+
+//---------------
+
+// How would we go from 10 to 20?
+for ( let count = 10; count < 21; count += 1 ) {
+
+    console.log(count)
+
+}
+
+//---------------
+
+// Create a for loop that counts from 10 to 100 in steps of 10
+// Use console.log to log out the numbers
+for (let count = 10; count < 101; count += 10) {
+console.log(count)
+}
+
+//---------------
+
+let messages = [
+"Hey, how's it going?",
+"I'm great, thank you! How about you?",
+"All good. Been working on my portfolio lately.",
+"Same here!",
+"Great to hear",
+"🙌"
+]
+// DRY - Don't repeat yourself
+// console.log(messages[0])
+// console.log(messages[1])
+// console.log(messages[2])
+// console.log(messages[3])
+
+for (let i = 0; i < messages.length; i+= 1){
+console.log(mesages[i])
+}
+
+//---------------
+
+let cards = [7, 3, 9]
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+for (let i = 0; i < cards.length; i++){ //i++ is same as i+=1
+console.log(cards[i])
+}
+
+//---------------
+
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
+let greetingEl = document.getElementById("greeting-el")
+
+// Render the sentence in the greetingEl
+// paragraph using a for loop and .textContent
+for (let i = 0; i < sentence.length; i+= 1) {
+greetingEl.textContent += sentence[i] + ""
+}
+// How do you keep the spaces between the words
+// if I remve them from the array? + ""
+
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//RETURNING Values
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
+
+let player1Time = 102
+let player2Time = 107
+
+function getFastestRaceTime() {
+if (player1Time < player2Time) {
+return player1Time
+} else if (player2Time < player1Time) {
+return player2Time
+} else {
+return player1Time
+}
+}
+
+let fastestRace = getFastestRaceTime()
+
+// Write a function that returns the total race time
+function totalRaceTime() {
+return player1Time + player2Time
+}
+
+let finalTime = totalRaceTime()
+// Call/invoke the function and store the returned value in a new variable
+console.log(finalTime)
+// Finally, log the variable out
+
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//JAVASCRIPT MATH
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
+
+let randomNumber = Math.random()
+
+console.log(randomNumber)
+
+// What does Math.random() do?
+
+// Your answer:
+// it generates a random number between 0 and 1 (not inclusive of 1)
+
+//---------------
+
+let newRandomNumber = Math.random() \* 6
+
+console.log(newRandomNumber)
+
+// In which range will our randomNumber be now?
+
+// From: 0
+// To: 5.999999999
+
+//---------------
+
+let flooredNumber = Math.floor(3.45632)
+
+console.log(flooredNumber)
+
+// What does Math.floor() do to positive numbers?
+
+// Your answer: it removes the decimals
+
+//---------------
+
+let myRandomNumber = Math.floor( Math.random() \* 6 )
+
+console.log(myRandomNumber)
+
+// Write down all the possible values randomNumber can hold now!
+// 0 | 1 | 2 | 3 | 4 | 5
+
+//---------------
+
+// Try to modify the expression so that we get a range from 1 to 6
+let theRandomNumber = Math.floor( Math.random() \* 6 ) + 1
+
+console.log(theRandomNumber)
+// 0 | 1 | 2 | 3 | 4 | 5 | 6
+
+//---------------
+
+// Create a function, rollDice(),
+// that returns a random number between 1 and 6
+
+function rollDice() {
+let randomNumber = Math.floor( Math.random() \* 6 ) + 1
+return randomNumber
+}
+console.log( rollDice() )
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+//LOGICAL OPERATORS
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// && and operator
+// || or operator
+
+let hasCompletedCourse = true
+let givesCertificate = true
+
+// if (hasCompletedCourse === true) {
+// if (givesCertificate === true) {
+// generateCertificate()
+// }
+// }
+
+if (hasCompletedCourse === true && givesCertificate === true) {
+generateCertificate()
+}
+
+function generateCertificate() {
+console.log("Generating certificate....")
+}
+
+//---------------
+
+// Create an if statement that checks that both variables are false.
+// If so, run the showSolution() function
+let hasSolvedChallenge = false
+let hasHintsLeft = false
+
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+showSolution()
+}
+
+function showSolution() {
+console.log("Showing the solution....")
+}
+
+//---------------
+
+// || or operator
+if (hasCompletedCourse === true || givesCertificate === true) {
+generateCertificate()
+}
+
+//---------------
+
+// Create two boolean variables,
+// likesDocumentaries and likesStartups
+let likesDocumentaries = true;
+let likesStartups = false
+// Use an OR statement (||) to call recommendMovie()
+// if either of those variables are true
+if (likesDocumentaries === true || likesStartups === true) {
+recommendMovie()
+}
+
+function recommendMovie(){
+console.log("Here are movies we recommend")
+}
+
+//OBJECTS
+//--------------------------------------------------------------------------------------
+
+//Objects - store data in-depth - composite / complex data type
+// key-value pairs
+
+let player = {
+name: "Per",
+chips: 145
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
+
+//---------------
+
+let course = {
+title: "Learn CSS Grid for free",
+lessons: 16,
+creator: "Per Harald Borgen",
+length: 63,
+level: 2,
+isFree: true,
+tags: ["html", "css"]
+}
+
+console.log( course.tags )
+
+//---------------
+
+// Create an object that represents an airbnb castle listing.
+// It should contain at least one boolean, one string, one number, and one array
+let castle = {
+title: "Live like a king in my castle",
+price: 190,
+isSuperHost: true,
+images: ["img/castle1.png", "img/caste2.png"]
+}
+
+// Log out at least two of the keys using the dot notation
+console.log(castle.price)
+console.log(castle.isSuperHost)
+
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 //QUIZ
-// ------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 
 let myPoints = 3
 
@@ -410,126 +891,9 @@ isAlive = false;
 
 // 3. Log it out!
 console.log(message);
-// ------------------------------------------------------------
-
-// Arrays - ordered lists of items
-
-let featuredPosts = [
-"Check out my Netflix clone",
-"Here's the code for my project",
-"I've just relaunched my portfolio"
-]
-
-console.log( featuredPosts.length ) // 3
-//length is no zero index. it starts at 1
-
-// Create an array that lists your i.e. experience, education, licenses, skills or similar
-// The items of the array should be strings
-let experience = [
-"CEO at Scrimba", //0
-"Frontend developer at Xeneta", //1
-"People counter for Norstat" //2
-]
-
-console.log(experience[1])
-console.log(experience[2])
-console.log(experience[0])
-// Make the following appear in the console:
-// Frontend developer at Xeneta
-// People counter for Norstat
-// CEO at Scrimba
-// ------------------------------------------------------------
-
-// Array - ordered list of items - coposite / complex data type
-
-// Create an array that describes yourself.
-// Use the three primitive data types you've learned
-let aboutMe = [
-"My name is Miah",
-27,
-true
-]
-
-// It should contain your name (string), your age (number),
-// and whether you like pizza (boolean)
-// ------------------------------------------------------------
-
-//Array.push() and .pop()
-let cards = [7, 4]
-cards.push(6) //adds 6 to array
-
-// Push the newMessage to the messages array, and then log out the array
-let messages = [
-"Hey, how's it going?",
-"I'm great, thank you! How about you?",
-"All good. Been working on my portfolio lately."
-]
-
-let newMessage = "Same here!"
-messages.push(newMessage)
-console.log(messages)
-
-// How can you remove the last item in an array? Try to google it!
-messages.pop(newMessage)
-console.log(messages)
 
 // ------------------------------------------------------------
-//Counting in Javascript
 
-// Count to ten!
-
-// We need to specify...
-
-// Where should we START counting?
-// Where is the FINISH line?
-// What's the STEP SIZE we should use?
-
-//start at 1
-//finish before 11 (10)
-// step size = increase by 1 each time
-
-// START............. FINISH..... STEP SIZE
-for ( let count = 1; count < 11; count += 1 ) {
-
-    console.log(count)
-    //1
-    //2
-    //3
-    //4
-    //5
-    //6
-    //7
-    //8
-    //9
-    //10
-
-}
-
-for ( let count = 1; count < 11; count += 2 ) {
-
-    console.log(count)
-    //1
-    //3
-    //5
-    //7
-    //9
-
-}
-
-// How would we go from 10 to 20?
-for ( let count = 10; count < 21; count += 1 ) {
-
-    console.log(count)
-
-}
-
-// Create a for loop that counts from 10 to 100 in steps of 10
-// Use console.log to log out the numbers
-for (let count = 10; count < 101; count += 10) {
-console.log(count)
-}
-
-// ------------------------------------------------------------
 let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
 
 // Use a for loop to log the following to the console:
@@ -551,224 +915,19 @@ console.log("The 5 largest countries in the world: ")
 countries()
 
 // ------------------------------------------------------------
-let messages = [
-"Hey, how's it going?",
-"I'm great, thank you! How about you?",
-"All good. Been working on my portfolio lately.",
-"Same here!",
-"Great to hear",
-"🙌"
-]
-// DRY - Don't repeat yourself
-// console.log(messages[0])
-// console.log(messages[1])
-// console.log(messages[2])
-// console.log(messages[3])
 
-for (let i = 0; i < messages.length; i+= 1){
-console.log(mesages[i])
+let hands = ["rock", "paper", "scissor"]
+
+// Create a function that returns a random item from the array
+function getHand() {
+let randomIndex = Math.floor( Math.random() \* 3)
+return hands[randomIndex]
 }
 
-// ------------------------------------------------------------
-let cards = [7, 3, 9]
-
-// Create a for loop that logs out all the cards in the array
-// Use cards.length to specify how long the loop should run
-for (let i = 0; i < cards.length; i++){ //i++ is same as i+=1
-console.log(cards[i])
-}
-
-// ------------------------------------------------------------
-let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
-let greetingEl = document.getElementById("greeting-el")
-
-// Render the sentence in the greetingEl
-// paragraph using a for loop and .textContent
-for (let i = 0; i < sentence.length; i+= 1) {
-greetingEl.textContent += sentence[i] + ""
-}
-// How do you keep the spaces between the words
-// if I remve them from the array? + ""
-
-// ------------------------------------------------------------
-//Returning Values
-
-let player1Time = 102
-let player2Time = 107
-
-function getFastestRaceTime() {
-if (player1Time < player2Time) {
-return player1Time
-} else if (player2Time < player1Time) {
-return player2Time
-} else {
-return player1Time
-}
-}
-
-let fastestRace = getFastestRaceTime()
-
-// Write a function that returns the total race time
-function totalRaceTime() {
-return player1Time + player2Time
-}
-
-let finalTime = totalRaceTime()
-// Call/invoke the function and store the returned value in a new variable
-console.log(finalTime)
-// Finally, log the variable out
-
-// ------------------------------------------------------------
-//Javascript Math
-
-let randomNumber = Math.random()
-
-console.log(randomNumber)
-
-// What does Math.random() do?
-
-// Your answer:
-// it generates a random number between 0 and 1 (not inclusive of 1)
-
-// ------------------------------------------------------------
-let newRandomNumber = Math.random() \* 6
-
-console.log(newRandomNumber)
-
-// In which range will our randomNumber be now?
-
-// From: 0
-// To: 5.999999999
-
-// ------------------------------------------------------------
-let flooredNumber = Math.floor(3.45632)
-
-console.log(flooredNumber)
-
-// What does Math.floor() do to positive numbers?
-
-// Your answer: it removes the decimals
-
-// ------------------------------------------------------------
-let myRandomNumber = Math.floor( Math.random() \* 6 )
-
-console.log(myRandomNumber)
-
-// Write down all the possible values randomNumber can hold now!
-// 0 | 1 | 2 | 3 | 4 | 5
-
-// ------------------------------------------------------------
-// Try to modify the expression so that we get a range from 1 to 6
-let theRandomNumber = Math.floor( Math.random() \* 6 ) + 1
-
-console.log(theRandomNumber)
-// 0 | 1 | 2 | 3 | 4 | 5 | 6
-
-// ------------------------------------------------------------
-// Create a function, rollDice(),
-// that returns a random number between 1 and 6
-
-function rollDice() {
-let randomNumber = Math.floor( Math.random() \* 6 ) + 1
-return randomNumber
-}
-console.log( rollDice() )
-
-// ------------------------------------------------------------
-//Logical Operators
-// && and operator
-// || or operator
-
-let hasCompletedCourse = true
-let givesCertificate = true
-
-// if (hasCompletedCourse === true) {
-// if (givesCertificate === true) {
-// generateCertificate()
-// }
-// }
-
-if (hasCompletedCourse === true && givesCertificate === true) {
-generateCertificate()
-}
-
-function generateCertificate() {
-console.log("Generating certificate....")
-}
-
-// Create an if statement that checks that both variables are false.
-// If so, run the showSolution() function
-let hasSolvedChallenge = false
-let hasHintsLeft = false
-
-if (hasSolvedChallenge === false && hasHintsLeft === false) {
-showSolution()
-}
-
-function showSolution() {
-console.log("Showing the solution....")
-}
-
-// || or operator
-if (hasCompletedCourse === true || givesCertificate === true) {
-generateCertificate()
-}
-
-// Create two boolean variables,
-// likesDocumentaries and likesStartups
-let likesDocumentaries = true;
-let likesStartups = false
-// Use an OR statement (||) to call recommendMovie()
-// if either of those variables are true
-if (likesDocumentaries === true || likesStartups === true) {
-recommendMovie()
-}
-
-function recommendMovie(){
-console.log("Here are movies we recommend")
-}
-
-// ------------------------------------------------------------
-//Objects - store data in-depth - composite / complex data type
-// key-value pairs
-
-let player = {
-name: "Per",
-chips: 145
-}
-
-let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" + player.chips
-
-// ------------------------------------------------------------
-let course = {
-title: "Learn CSS Grid for free",
-lessons: 16,
-creator: "Per Harald Borgen",
-length: 63,
-level: 2,
-isFree: true,
-tags: ["html", "css"]
-}
-
-console.log( course.tags )
+console.log( getHand() )
 
 // ------------------------------------------------------------
 
-// Create an object that represents an airbnb castle listing.
-// It should contain at least one boolean, one string, one number, and one array
-let castle = {
-title: "Live like a king in my castle",
-price: 190,
-isSuperHost: true,
-images: ["img/castle1.png", "img/caste2.png"]
-}
-
-// Log out at least two of the keys using the dot notation
-console.log(castle.price)
-console.log(castle.isSuperHost)
-
-// ------------------------------------------------------------
 let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
 
 // You need to help me fixup the largeCountries array so that
@@ -782,3 +941,5 @@ largeCountries.push("Pakistan")
 largeCountries.shift()
 largeCountries.unshift("China")
 console.log(largeCountries)
+
+// ------------------------------------------------------------
