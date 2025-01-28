@@ -943,3 +943,23 @@ largeCountries.unshift("China")
 console.log(largeCountries)
 
 // ------------------------------------------------------------
+
+//<h1>Emoji<br>Fighter</h1>
+//<div id="stage"></div>
+//<button id="fightButton">Pick Fighters!</button>
+
+let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+
+let stageEl = document.getElementById("stage")
+let fightButton = document.getElementById("fightButton")
+
+fightButton.addEventListener("click", function() {
+// Challenge:
+// When the user clicks on the "Pick Fighters" button, pick two random
+// emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
+let randomIndexOne = Math.floor( Math.random() x fighters.length )
+let randomIndexTwo = Math.floor( Math.random() x fighters.length )
+stageEl.textContent =(fighters[randomIndexOne] + " vs " + fighters[randomIndexTwo])
+})
+
+// ------------------------------------------------------------
