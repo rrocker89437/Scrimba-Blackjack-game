@@ -544,3 +544,122 @@ greetingEl.textContent += sentence[i] + ""
 }
 // How do you keep the spaces between the words
 // if I remve them from the array? + ""
+
+// ------------------------------------------------------------
+//Returning Values
+
+let player1Time = 102
+let player2Time = 107
+
+function getFastestRaceTime() {
+if (player1Time < player2Time) {
+return player1Time
+} else if (player2Time < player1Time) {
+return player2Time
+} else {
+return player1Time
+}
+}
+
+let fastestRace = getFastestRaceTime()
+
+// Write a function that returns the total race time
+function totalRaceTime() {
+return player1Time + player2Time
+}
+
+let finalTime = totalRaceTime()
+// Call/invoke the function and store the returned value in a new variable
+console.log(finalTime)
+// Finally, log the variable out
+
+// ------------------------------------------------------------
+//Javascript Math
+
+let randomNumber = Math.random()
+
+console.log(randomNumber)
+
+// What does Math.random() do?
+
+// Your answer:
+// it generates a random number between 0 and 1 (not inclusive of 1)
+
+// ------------------------------------------------------------
+let newRandomNumber = Math.random() \* 6
+
+console.log(newRandomNumber)
+
+// In which range will our randomNumber be now?
+
+// From: 0
+// To: 5.999999999
+
+// ------------------------------------------------------------
+let flooredNumber = Math.floor(3.45632)
+
+console.log(flooredNumber)
+
+// What does Math.floor() do to positive numbers?
+
+// Your answer: it removes the decimals
+
+// ------------------------------------------------------------
+let myRandomNumber = Math.floor( Math.random() \* 6 )
+
+console.log(myRandomNumber)
+
+// Write down all the possible values randomNumber can hold now!
+// 0 | 1 | 2 | 3 | 4 | 5
+
+// ------------------------------------------------------------
+// Try to modify the expression so that we get a range from 1 to 6
+let theRandomNumber = Math.floor( Math.random() \* 6 ) + 1
+
+console.log(theRandomNumber)
+// 0 | 1 | 2 | 3 | 4 | 5 | 6
+
+// ------------------------------------------------------------
+// Create a function, rollDice(),
+// that returns a random number between 1 and 6
+
+function rollDice() {
+let randomNumber = Math.floor( Math.random() \* 6 ) + 1
+return randomNumber
+}
+console.log( rollDice() )
+
+// ------------------------------------------------------------
+//Logical Operators
+
+let hasCompletedCourse = true
+let givesCertificate = true
+
+// if (hasCompletedCourse === true) {
+// if (givesCertificate === true) {
+// generateCertificate()
+// }
+// }
+
+if (hasCompletedCourse === true && givesCertificate === true) {
+generateCertificate()
+}
+
+function generateCertificate() {
+console.log("Generating certificate....")
+}
+
+// Create an if statement that checks that both variables are false.
+// If so, run the showSolution() function
+let hasSolvedChallenge = false
+let hasHintsLeft = false
+
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+showSolution()
+}
+
+function showSolution() {
+console.log("Showing the solution....")
+}
+
+// ------------------------------------------------------------
